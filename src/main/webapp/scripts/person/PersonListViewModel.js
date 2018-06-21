@@ -1,34 +1,6 @@
 function PersonListViewModel(){
 	var self = this;
-	self.people = ko.observableArray([
-		new PersonViewModel({
-			id:1,
-			age:0,
-			birthday:"06/28/2016",
-			email:"a@wp.pl",
-			firstName:"jan",
-			gender:"Male",
-			lastName:"kowalski"
-			},self),
-		new PersonViewModel({
-			id:1,
-			age:0,
-			birthday:"06/28/2016",
-			email:"a@wp.pl",
-			firstName:"jan",
-			gender:"Male",
-			lastName:"kowalski"
-			},self),
-		new PersonViewModel({
-			id:1,
-			age:0,
-			birthday:"06/28/2016",
-			email:"a@wp.pl",
-			firstName:"jan",
-			gender:"Male",
-			lastName:"kowalski"
-			},self)
-		]);
+	self.people = ko.observableArray([]);
 	self.page=ko.observable(1);
 	self.next = function(){
 		self.page(self.page()+1);

@@ -9,7 +9,7 @@
 		<script type="text/javascript">
 		$.ajax({
             url: "/samplerestapp/rest/test",
-            type: "POST",
+            type: "GET",
             data: ko.toJSON({
             	messege:"hello"
             }),
